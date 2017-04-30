@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+  
+// var workflowData = #{test}
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .modal-header, h4, .close {
+      background-color: blue;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  </style>
+</head>
+<!-- <body onLoad="$('#myModal').modal('show');" ng-app="InternalTool" ng-controller="LoginController as loginCtrl"> --> 
+<body ng-app="InternalTool" ng-controller="LoginController as loginCtrl" >
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-3"><!-- for length of text field ... shifting form window horizontly -->
+            <div class="panel panel-default">
+                <div class="panel-heading" align = "center"> <strong class="">Login</strong>
+
+                </div>
+                <div class="panel-body">
+                    
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="userName" class="col-sm-3 control-label">User Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="User Name" ng-model=loginCtrl.login.user required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" ng-model=loginCtrl.login.password required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label class="">
+                                        <!-- <input type="checkbox" class="">Remember me</label> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group last">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button ng-click="loginCtrl.verifyUser(loginCtrl.login)" class="btn btn-success btn-sm">Sign in</button>
+                                <button type="reset" class="btn btn-default btn-sm">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- <div class="panel-footer">Not Registered? <a href="#" class="">Register here</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> 
+  <script src="/internal-tool/web/angular-cookies.min.js"></script>   
+  
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.1.0/angular-cookie.js"></script> -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.8/smart-table.min.js"></script> 
+
+
+
+    <script src="/internal-tool/web/InternalTool.js"></script>`
+    <script src="/internal-tool/web/controllers/LoginController.js"></script>
+    <script src="/internal-tool/web/services/DataService.js"></script>
+
+    <script src="/internal-tool/web/controllers/MainController.js"></script> 
+
+</body>
+
+<!-- <p align="right">© Hitachi Solutions India Pvt. Ltd. All rights reserved.</p> -->
+</html>
+</div>

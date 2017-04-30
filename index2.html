@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Internal tool - JBU</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+	
+<link rel="stylesheet" href="/internal-tool/assets/css/home.css">
+  </head>
+  
+
+  <body ng-app="InternalTool" ng-controller="MainController as mainCtrl" >
+  
+
+  <div class="tabsClass">
+	<ul class="nav nav-tabs">
+		<li class="dropdown" >
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#" ><font size="5">Projects Details </font><span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li ng-click="mainCtrl.setActiveTab(1)"><a href="#">New Project</a></li>
+				<li ng-click="mainCtrl.setActiveTab(2)"><a href="#">Existing Project</a></li>
+			</ul>
+		</li>
+		<li ng-click="mainCtrl.setActiveTab(3)"><a href="#"><font size="5">Documents</font></a></li>
+		<li  class="dropdown2" >
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#"><font size="5">Problems & Solutions </font><span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li ng-click="mainCtrl.setActiveTab(4)"><a href="#">New Problem</a></li>
+				<li ng-click="mainCtrl.setActiveTab(5)"><a href="#">Posted issues</a></li>
+			</ul>
+		</li>
+		<li ng-click="mainCtrl.setActiveTab(7)"><a href="#"><font size="5">About</font></a></li>
+		<!-- <li ng-click="window.open('http://www.google.com')"><a href="#">About</a></li> -->
+		
+		<!-- <li ng-click="mainCtrl.setActiveTab(8)"><a href="#">Logout</a></li> --> 
+		 <!-- window.location = "/index2.html"; -->
+		<li ng-click="mainCtrl.setActiveTab(8)"><a href="#"><font size="5">Logout</font>
+<!-- {{mainCtrl.loginUser}}		 -->
+
+		<!-- <span style="text-transform: capitalize">{{mainCtrl.loginUser}}</span> -->
+		</a></li>
+<span align='right'><font size="3" color="6495ED">{{mainCtrl.loginUser}} !</font></span> 
+	</ul>
+
+	  <div class="tab-content">
+		<div ng-include= "mainCtrl.templateUrl">Panel 1 Content</div>
+		
+	  </div>
+	  </div>
+	
+	   
+
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ 
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	  <!-- already available in login.html -->
+	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.8/smart-table.min.js"></script> 
+	
+	  <script src="/internal-tool/web/InternalTool.js"></script>	<!-- for module -->
+	  
+	  <script src="/internal-tool/web/services/DataService.js"></script>
+	  <script src="/internal-tool/web/controllers/MainController.js"></script>
+	  <script src="/internal-tool/web/controllers/NewProjectController.js"></script>
+	  <script src="/internal-tool/web/controllers/ProjectListController.js"></script>
+	  <script src="/internal-tool/web/controllers/DocumentController.js"></script>
+	  <script src="/internal-tool/web/controllers/ProblemController.js"></script>
+	  <script src="/internal-tool/web/controllers/ProblemListController.js"></script>
+	  <script src="/internal-tool/web/controllers/SolutionController.js"></script>
+
+	  <script src="/internal-tool/web/directives/datePicker.js"></script>
+	  <script src="/internal-tool/web/directives/fileSelect.js"></script>
+
+</div>
+  </body>
+  <br><br><br> 
+<p align="center">© Hitachi Solutions India Pvt. Ltd. All rights reserved.</p>
+</html>

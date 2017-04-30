@@ -1,0 +1,28 @@
+{
+  "name": "internal-tool",
+  "version": "1.0.0",
+  "description": "Project management tool",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nodejs",
+    "AngularJs"
+  ],
+  "author": "Chandresh Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.0",
+    "mongoose": "^4.9.5",
+    "mongoose-auto-increment": "^5.0.1",
+    "multer": "^1.2.0",
+    "nodemailer": "^2.6.4",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.1.0",
+    "passport-local": "^1.0.0"
+  }
+}
